@@ -1,0 +1,5 @@
+[
+  { "price": 10, "currency": "€" },
+  { "price": 10, "discountPrice": 10, "currency": "€" },
+  { "price": 10, "discountPrice": 5, "currency": "€" }
+]
