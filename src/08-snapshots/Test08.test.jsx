@@ -1,12 +1,18 @@
-// import { http, HttpResponse } from "msw";
-// import { setupServer } from "msw/node";
+import { render } from "@testing-library/react";
+import { describe, expect } from "vitest";
+import { Test08 } from "./Test08";
 
-// const server = setupServer(
-//   http.get("/greeting", () => {
-//     return HttpResponse.json({ greeting: "hello there" });
-//   }),
-// );
+/**
+ * We need to know they exist but we don't want to use them
+ * Check toMatchSnapshot API
+ * https://vitest.dev/guide/snapshot.html
+ * https://jestjs.io/docs/snapshot-testing
+ */
 
-// beforeAll(() => server.listen());
-// afterEach(() => server.resetHandlers());
-// afterAll(() => server.close());
+describe(Test08, () => {
+  test("snapshot", () => {
+    const component = render(<Test08 />);
+
+    expect(component.baseElement).toMatchSnapshot();
+  });
+});

@@ -1,12 +1,5 @@
 # Masterclass testing with React
 
-# Table of Contents
-
-1. [Introduction](#Introduction)
-2. [Example2](#example2)
-3. [Third Example](#third-example)
-4. [Fourth Example](#fourth-examplehttpwwwfourthexamplecom)
-
 ## Set-up
 
 1. git clone repo
@@ -32,10 +25,16 @@
 #### 03 React Testing Library (RTL)
 
 Install library
-`npm install --save-dev @testing-library/react @testing-library/dom`
 
-Install DOM matchers
-`npm install --save-dev @testing-library/jest-dom`
+```bash
+npm install --save-dev @testing-library/react @testing-library/dom
+```
+
+Install DOM matchers, to have access to `toBeInTheDocument` for example
+
+```bash
+npm install --save-dev @testing-library/jest-dom
+```
 
 #### 04 User Interactions
 
@@ -43,7 +42,9 @@ Install DOM matchers
 
 #### 09 Mock API calls
 
-`npm install --save-dev msw`
+```bash
+npm install --save-dev msw
+```
 
 ## Resources
 
