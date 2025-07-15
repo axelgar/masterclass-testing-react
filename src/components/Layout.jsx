@@ -14,7 +14,7 @@ const navigation = [
   { name: "06 - Tests with context", href: "/test-06", icon: BeakerIcon },
   { name: "07 - Async testing", href: "/test-07", icon: BeakerIcon },
   { name: "08 - Snapshots", href: "/test-08", icon: BeakerIcon },
-  { name: "09 - Mock API calls", href: "/test-09", icon: BeakerIcon },
+  { name: "10 - Mock API calls", href: "/test-10", icon: BeakerIcon },
 ];
 
 export const Layout = () => {

@@ -10,10 +10,6 @@ import { WishlistButton } from "../components/WishlistButton";
  */
 
 describe("Test05:vi.fn", () => {
-  afterEach(() => {
-    vi.restoreAllMocks();
-  });
-
   test("button is enabled if user is logged int", async () => {
     const user = userEvent.setup();
     const onClick = vi.fn();

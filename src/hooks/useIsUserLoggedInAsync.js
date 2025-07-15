@@ -8,7 +8,7 @@ export const useIsUserLoggedInAsync = () => {
     const id = setTimeout(() => {
       setIsUserLoggedIn(true);
       setIsLoading(false);
-    }, 1000);
+    }, 500);
     return () => clearTimeout(id);
   }, []);
 

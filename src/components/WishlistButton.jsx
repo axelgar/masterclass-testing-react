@@ -8,10 +8,10 @@ export const WishlistButton = ({ onClick, isInWishlist, isUserLoggedIn }) => {
     <button
       disabled={!isUserLoggedIn}
       onClick={onClick}
-      className="group inline-flex cursor-pointer items-center gap-2 rounded-sm bg-red-400 px-3 py-1 font-semibold text-white disabled:cursor-not-allowed disabled:bg-gray-400 disabled:text-gray-200"
+      className="group/wishlist inline-flex max-w-xs cursor-pointer items-center justify-center gap-2 rounded-sm bg-red-400 px-3 py-1 font-semibold text-white disabled:cursor-not-allowed disabled:bg-gray-400 disabled:text-gray-200"
     >
-      <HeartIcon className="h-5 w-5 text-white group-disabled:text-gray-200" />
-      {isInWishlist ? "Remove from wishlist" : "Add to wishlist"}
+      <HeartIcon className="h-5 w-5 text-white group-disabled/wishlist:text-gray-200" />
+      <span className="truncate block max-w-full">{isInWishlist ? "Remove from wishlist" : "Add to wishlist"}</span>
     </button>
   );
 };

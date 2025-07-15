@@ -7,7 +7,6 @@ import { WishlistButton } from "../components/WishlistButton";
  * Queries priority https://testing-library.com/docs/queries/about/#priority
  * Use of screen vs container
  * Use of screen.debug
- * Use regex to make tests more robust
  */
 
 describe(WishlistButton, () => {

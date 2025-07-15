@@ -31,7 +31,7 @@ describe(Price, () => {
     act(() => createRoot(container).render(<Price product={product} />));
 
     const [discountText] = document.querySelectorAll("p");
-    expect(discountText).toHaveTextContent("-50%");
+    expect(discountText).toHaveTextContent("-50.00%");
   });
 
   test("does not show a badge if product discount is same as original price", () => {

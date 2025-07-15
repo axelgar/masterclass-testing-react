@@ -1,0 +1,55 @@
+[
+  {
+    "id": "1",
+    "name": "Wireless Headphones",
+    "image": "https://thumb.pccomponentes.com/w-530-530/articles/1077/10777923/1832-airpods-pro-2a-generacion-con-estuche-de-carga-inalambrica-usb-c-blancos.jpg",
+    "altText": "Black wireless over-ear headphones",
+    "price": 99.99,
+    "discountPrice": 99.99,
+    "currency": "€"
+  },
+  {
+    "id": "2",
+    "name": "Smartwatch Pro",
+    "image": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_158163668?x=536&y=402&format=jpg&quality=80&sp=yes&strip=yes&trim&ex=536&ey=402&align=center&resizesource&unsharp=1.5x1+0.7+0.02&cox=0&coy=0&cdx=536&cdy=402",
+    "altText": "Smartwatch with leather strap and round display",
+    "price": 199.0,
+    "discountPrice": 149.0,
+    "currency": "€"
+  },
+  {
+    "id": "3",
+    "name": "Gaming Keyboard",
+    "image": "https://m.media-amazon.com/images/I/614U66QoZQL.__AC_SX300_SY300_QL70_ML2_.jpg",
+    "altText": "RGB mechanical gaming keyboard",
+    "price": 89.5,
+    "discountPrice": 69.99,
+    "currency": "€"
+  },
+  {
+    "id": "4",
+    "name": "4K Monitor 27\"",
+    "image": "https://www.lg.com/content/dam/channel/wcms/es/monitores/imagenes/27gs75q-b/00_lg_27GS75Q-B_basic_main_450x450.jpg/_jcr_content/renditions/thum-1100x730.jpeg",
+    "altText": "27 inch 4K UHD monitor on a desk",
+    "price": 349.99,
+    "discountPrice": 299.99,
+    "currency": "€"
+  },
+  {
+    "id": "5",
+    "name": "Portable Bluetooth Speaker",
+    "image": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_138763361?x=320&y=320&format=jpg&quality=80&sp=yes&strip=yes&trim&ex=320&ey=320&align=center&resizesource&unsharp=1.5x1+0.7+0.02&cox=0&coy=0&cdx=320&cdy=320",
+    "altText": "Compact waterproof Bluetooth speaker",
+    "price": 59.0,
+    "currency": "€"
+  },
+  {
+    "id": "6",
+    "name": "Phone",
+    "image": "https://thumb.pccomponentes.com/w-530-530/articles/1085/10855051/1647-apple-iphone-16-pro-128gb-titanio-negro-libre.jpg",
+    "altText": "Compact waterproof phone",
+    "price": 599.0,
+    "discountPrice": 399.99,
+    "currency": "€"
+  }
+]

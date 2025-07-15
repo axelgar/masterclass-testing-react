@@ -26,7 +26,7 @@ describe(getDiscountPercentage, () => {
 
     const discountPercentage = getDiscountPercentage(products);
 
-    expect(discountPercentage).toBe(50);
+    expect(discountPercentage).toBe("50.00");
   });
 
   test("returns 0 if discount price is equal to original price", () => {

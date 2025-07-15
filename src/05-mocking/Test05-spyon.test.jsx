@@ -6,6 +6,7 @@ import { Test05 } from "./Test05";
  * vi.fn() to create mock functions
  * vi.spyOn() to check if function has been called ***
  * vi.mock() to mock modules
+ * Remember to clear mocks
  * https://vitest.dev/guide/mocking
  * https://jestjs.io/docs/mock-functions
  */

@@ -9,8 +9,9 @@ import { Test05 } from "./05-mocking/Test05";
 import { Test06 } from "./06-tests-with-context/Test06";
 import { Test07 } from "./07-async-testing/Test07";
 import { Test08 } from "./08-snapshots/Test08";
-import { Test09 } from "./09-mock-api-calls/Test09";
+import { Test10 } from "./10-mock-api-calls/Test10";
 import { Layout } from "./components/Layout";
+import { NotFound } from "./components/NotFound";
 import "./index.css";
 
 createRoot(document.getElementById("root")).render(
@@ -27,7 +28,8 @@ createRoot(document.getElementById("root")).render(
           <Route path="/test-06" element={<Test06 />} />
           <Route path="/test-07" element={<Test07 />} />
           <Route path="/test-08" element={<Test08 />} />
-          <Route path="/test-09" element={<Test09 />} />
+          <Route path="/test-10" element={<Test10 />} />
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </BrowserRouter>

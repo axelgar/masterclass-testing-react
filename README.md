@@ -1,12 +1,5 @@
 # Masterclass testing with React
 
-## Set-up
-
-1. git clone repo
-2. `npm install`
-3. `npm run dev`
-4. Visit http://localhost:5173/
-
 ## Tech stack
 
 - JavaScript
@@ -18,7 +11,18 @@
 - Prettier
 - Eslint
 
-## Introduction
+## How to run the application
+
+1. git clone repo
+2. `npm install`
+3. `npm run dev`
+4. Visit http://localhost:5173/
+
+## How to run the server (for test 09)
+
+1. git clone repo
+2. `npm install`
+3. `npm run dev:server`
 
 ## Setup instructions per exercise
 

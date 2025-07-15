@@ -15,11 +15,11 @@ exports[`Test08 > snapshot 1`] = `
         class="border border-gray-500 p-2 text-center"
       >
         <button
-          class="group inline-flex cursor-pointer items-center gap-2 rounded-sm bg-red-400 px-3 py-1 font-semibold text-white disabled:cursor-not-allowed disabled:bg-gray-400 disabled:text-gray-200"
+          class="group/wishlist inline-flex max-w-xs cursor-pointer items-center justify-center gap-2 rounded-sm bg-red-400 px-3 py-1 font-semibold text-white disabled:cursor-not-allowed disabled:bg-gray-400 disabled:text-gray-200"
         >
           <svg
             aria-hidden="true"
-            class="h-5 w-5 text-white group-disabled:text-gray-200"
+            class="h-5 w-5 text-white group-disabled/wishlist:text-gray-200"
             data-slot="icon"
             fill="none"
             stroke="currentColor"
@@ -33,7 +33,11 @@ exports[`Test08 > snapshot 1`] = `
               stroke-linejoin="round"
             />
           </svg>
-          Add to wishlist
+          <span
+            class="truncate block max-w-full"
+          >
+            Add to wishlist
+          </span>
         </button>
       </div>
     </section>
