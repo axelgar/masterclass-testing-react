@@ -8,6 +8,9 @@ export const Test01 = () => {
       <div className="border border-gray-500 p-2">
         <Price product={products[0]} />
       </div>
+      <div className="border border-gray-500 p-2">
+        <Price product={products[2]} />
+      </div>
     </section>
   );
 };
