@@ -1,15 +1,12 @@
-export function getDiscountPercentage(products) {
-  const discount = products.reduce((acc, product) => {
-    if (!product.price || !product.discountPrice) {
-      return acc;
-    }
-    if (product.price === product.discountPrice) {
-      return acc;
-    }
+export function getDiscountPercentage(product) {
+  if (!product.price || !product.discountPrice) {
+    return;
+  }
+  if (product.price === product.discountPrice) {
+    return;
+  }
 
-    const discountPercent = ((product.price - product.discountPrice) / product.price) * 100;
-    return acc + discountPercent;
-  }, 0);
+  const discount = ((product.price - product.discountPrice) / product.price) * 100;
 
   return discount;
 }

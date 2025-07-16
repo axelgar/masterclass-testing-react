@@ -2,7 +2,7 @@ import { getDiscountPercentage } from "../utils/getDiscountPercentage";
 
 export const Price = ({ product }) => {
   const { price, discountPrice, currency } = product;
-  const discountPercentage = getDiscountPercentage([product]);
+  const discountPercentage = getDiscountPercentage(product);
 
   return (
     <div>
