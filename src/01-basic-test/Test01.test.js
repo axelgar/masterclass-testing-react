@@ -10,7 +10,7 @@ import { getDiscountPercentage } from "../utils/getDiscountPercentage";
  */
 
 describe(getDiscountPercentage, () => {
-  test("returns 0 if not discount price", () => {
+  test("returns 0 if no discount price", () => {
     // Arrange
     const products = [{ price: 10 }];
 
