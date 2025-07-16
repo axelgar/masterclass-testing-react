@@ -7,6 +7,5 @@ export function getDiscountPercentage(product) {
   }
 
   const discount = ((product.price - product.discountPrice) / product.price) * 100;
-
   return discount;
 }
