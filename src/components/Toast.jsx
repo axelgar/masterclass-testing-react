@@ -17,7 +17,7 @@ export const Toast = ({ show, pathname, setShow }) => (
             <button
               type="button"
               onClick={() => setShow(false)}
-              className="inline-flex rounded-md bg-white text-gray-400 hover:text-gray-500 focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 focus:outline-hidden"
+              className="inline-flex cursor-pointer rounded-md bg-white text-gray-400 hover:text-gray-500 focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 focus:outline-hidden"
             >
               <span className="sr-only">Close</span>
               <XMarkIcon aria-hidden="true" className="size-5" />

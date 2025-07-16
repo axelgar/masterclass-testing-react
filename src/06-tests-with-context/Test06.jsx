@@ -9,7 +9,7 @@ export const Test06 = () => {
       <h2 className="font-semibold">06 - Tests with Context</h2>
 
       <div className="border border-gray-500 p-2 text-center">
-        <Toast show={true} pathname={pathname} />
+        <Toast show={true} pathname={pathname} setShow={() => null} />
       </div>
     </section>
   );

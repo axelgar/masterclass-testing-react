@@ -1,8 +1,8 @@
 import { fireEvent, render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { Test04 } from "./Test04";
+
 /**
- * Create test with DOM API
  * Use fireEvent
  * Use userEvent, recommended since it better mimics the browser behavior
  * https://testing-library.com/docs/user-event/setup

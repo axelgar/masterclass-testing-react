@@ -12,8 +12,8 @@ export const useGetProducts = () => {
         if (response.ok) {
           setData(dataResponse);
         }
-      } catch {
-        // TODO: Add proper error handling and tests.
+      } catch (error) {
+        console.error(error);
       } finally {
         setIsLoading(false);
       }

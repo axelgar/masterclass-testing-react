@@ -21,10 +21,18 @@ afterEach(() => server.resetHandlers());
 afterAll(() => server.close());
 
 describe(Test10, () => {
-  test("show list of products", async () => {
+  test("loading spinner shows before data loads", () => {
     render(<Test10 />);
 
-    await waitForElementToBeRemoved(screen.getByRole("alert"));
+    const spinner = screen.getByRole("alert", { name: /loading/ });
+
+    expect(spinner).toBeInTheDocument();
+  });
+
+  test("shows list of products", async () => {
+    render(<Test10 />);
+
+    await waitForElementToBeRemoved(screen.getByRole("alert", { name: /loading/ }));
 
     const productsList = screen.getByRole("list");
 
@@ -40,7 +48,7 @@ describe(Test10, () => {
 
     render(<Test10 />);
 
-    await waitForElementToBeRemoved(screen.getByRole("alert"));
+    await waitForElementToBeRemoved(screen.getByRole("alert", { name: /loading/ }));
 
     const notFoundMessage = screen.getByText(/no products found/i);
 

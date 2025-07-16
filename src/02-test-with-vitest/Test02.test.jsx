@@ -5,6 +5,7 @@ import { Price } from "../components/Price";
 /**
  * Here we are going to see how we could test a React component with only Vitest/Jest
  * We are mainly going to use the DOM API (querySelector, createElement, etc)
+ * When we need to use "act" utility
  */
 
 beforeEach(() => {

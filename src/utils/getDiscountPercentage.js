@@ -11,5 +11,5 @@ export function getDiscountPercentage(products) {
     return acc + discountPercent;
   }, 0);
 
-  return discount ? discount.toFixed(2) : 0;
+  return discount;
 }

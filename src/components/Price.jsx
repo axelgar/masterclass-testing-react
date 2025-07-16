@@ -9,7 +9,7 @@ export const Price = ({ product }) => {
       {discountPercentage ? (
         <div className="flex items-center justify-end gap-1">
           <div className="rounded-md bg-red-400 px-2 py-0.5">
-            <p className="text-sm text-white">-{discountPercentage}%</p>
+            <p className="text-sm text-white">-{discountPercentage.toFixed(2)}%</p>
           </div>
           <p className="text-sm line-through">
             {price}
