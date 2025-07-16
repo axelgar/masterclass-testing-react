@@ -1,6 +1,3 @@
-import { act, renderHook } from "@testing-library/react";
-import { describe, expect } from "vitest";
-
 import { useWishlistStore } from "../hooks/useWishlistStore";
 
 /**
@@ -9,31 +6,9 @@ import { useWishlistStore } from "../hooks/useWishlistStore";
  */
 
 describe(useWishlistStore, () => {
-  test("store starts with empty array", () => {
-    const { result } = renderHook(useWishlistStore);
+  test("store starts with empty array", () => {});
 
-    expect(result.current.list.size).toBe(0);
-  });
+  test("when id is not in list and update is called, id is added to the list", () => {});
 
-  test("when id is not in list and update is called, id is added to the list", () => {
-    const ID = 1;
-    const { result } = renderHook(useWishlistStore);
-
-    act(() => result.current.update(ID));
-
-    expect(result.current.list.has(ID)).toBeTruthy();
-  });
-
-  test("if id is in the list and update is called, id is removed from it", () => {
-    const ID = 1;
-    const { result } = renderHook(useWishlistStore);
-
-    act(() => result.current.update(ID));
-
-    expect(result.current.list.has(ID)).toBeTruthy();
-
-    act(() => result.current.update(ID));
-
-    expect(result.current.list.has(ID)).toBeFalsy();
-  });
+  test("if id is in the list and update is called, id is removed from it", () => {});
 });

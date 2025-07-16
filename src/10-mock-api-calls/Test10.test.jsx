@@ -1,7 +1,5 @@
-import { render, screen, waitForElementToBeRemoved } from "@testing-library/react";
 import { http, HttpResponse } from "msw";
 import { setupServer } from "msw/node";
-import { expect } from "vitest";
 import { Test10 } from "./Test10";
 import mockProducts from "./mock-products.json";
 
@@ -21,37 +19,9 @@ afterEach(() => server.resetHandlers());
 afterAll(() => server.close());
 
 describe(Test10, () => {
-  test("loading spinner shows before data loads", () => {
-    render(<Test10 />);
+  test("loading spinner shows before data loads", () => {});
 
-    const spinner = screen.getByRole("alert", { name: /loading/ });
+  test("shows list of products", () => {});
 
-    expect(spinner).toBeInTheDocument();
-  });
-
-  test("shows list of products", async () => {
-    render(<Test10 />);
-
-    await waitForElementToBeRemoved(screen.getByRole("alert", { name: /loading/ }));
-
-    const productsList = screen.getByRole("list");
-
-    expect(productsList).toBeInTheDocument();
-  });
-
-  test("shows not found message when api returns empty array", async () => {
-    server.use(
-      http.get("/", () => {
-        return HttpResponse.json([]);
-      }),
-    );
-
-    render(<Test10 />);
-
-    await waitForElementToBeRemoved(screen.getByRole("alert", { name: /loading/ }));
-
-    const notFoundMessage = screen.getByText(/no products found/i);
-
-    expect(notFoundMessage).toBeInTheDocument();
-  });
+  test("shows not found message when api returns empty array", () => {});
 });

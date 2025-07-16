@@ -1,5 +1,4 @@
-import { render } from "@testing-library/react";
-import { describe, expect } from "vitest";
+import { describe } from "vitest";
 import { Test08 } from "./Test08";
 
 /**
@@ -10,9 +9,5 @@ import { Test08 } from "./Test08";
  */
 
 describe(Test08, () => {
-  test("snapshot", () => {
-    const component = render(<Test08 />);
-
-    expect(component.baseElement).toMatchSnapshot();
-  });
+  test("snapshot", () => {});
 });

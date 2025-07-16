@@ -10,30 +10,9 @@ import { getDiscountPercentage } from "../utils/getDiscountPercentage";
  */
 
 describe(getDiscountPercentage, () => {
-  test("returns 0 if not discount price", () => {
-    // Arrange
-    const products = [{ price: 10 }];
+  test("returns 0 if no discount price", () => {});
 
-    // Act
-    const discountPercentage = getDiscountPercentage(products);
+  test("returns the correct discount percentage", () => {});
 
-    // Assert
-    expect(discountPercentage).toBe(0);
-  });
-
-  test("returns the correct discount percentage", () => {
-    const products = [{ price: 10, discountPrice: 5 }];
-
-    const discountPercentage = getDiscountPercentage(products);
-
-    expect(discountPercentage).toBe(50);
-  });
-
-  test("returns 0 if discount price is equal to original price", () => {
-    const products = [{ price: 10, discountPrice: 10 }];
-
-    const discountPercentage = getDiscountPercentage(products);
-
-    expect(discountPercentage).toBe(0);
-  });
+  test("returns 0 if discount price is equal to original price", () => {});
 });
